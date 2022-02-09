@@ -182,3 +182,45 @@ mysql> exit;
 > mysql -u root -p
 > password
  ```
+
+Create a Database `ecommercedb` for this application using the following command:
+```sh
+CREATE DATABASE ecommercedb;
+```
+
+Since we will be using the database, run the following command
+```sh
+USE ecommercedb;
+```
+
+## Table Creation:
+
+Use the following command to create the tables :
+
+> Categories
+
+```
+CREATE TABLE `Categories` (
+  `ID` int NOT NULL AUTO_INCREMENT,
+  `Name` varchar(255) NOT NULL,
+  `CreatedAt` datetime DEFAULT CURRENT_TIMESTAMP,
+  `UpdatedAt` datetime DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT;
+
+```
+
+## Data Insertion: 
+
+Following are the dummy data that can be used to populate the tables
+
+> Categories
+
+```
+INSERT INTO Categories (Name) VALUES ('Electronics');
+INSERT INTO Categories (Name) VALUES ('Mobiles');
+INSERT INTO Categories (Name) VALUES ('Books');
+INSERT INTO Categories (Name) VALUES ('Applicances');
+INSERT INTO Categories (Name) VALUES ('Fashion');
+
+```

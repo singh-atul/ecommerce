@@ -182,7 +182,7 @@ mysql> exit;
 > mysql -u root -p
 > password
  ```
-
+ 
 Create a Database `ecommercedb` for this application using the following command:
 ```sh
 CREATE DATABASE ecommercedb;
